@@ -326,25 +326,16 @@ private void OnPttCanceled(InputAction.CallbackContext ctx)
         DebugUI.Log("Opening WebSocket...");
         DebugUI.Instance.ConnectionState = "Connecting";
 
-        // --- FIX: SEND API KEY ---
-        // Vi laver en header-liste med din nøgle
+  
         var headers = new Dictionary<string, string>();
         if (!string.IsNullOrEmpty(apiKey))
         {
             headers.Add("xi-api-key", apiKey);
         }
 
-        // Vi giver headers med til WebSocketten her
+        
         _ws = new WebSocket(url, headers);
 
-        // build elvenlabs websocket URL and tie websocket session to agentId
-        // string url = $"wss://api.elevenlabs.io/v1/convai/conversation?agent_id={agentId}";
-        // if (logDebug) Debug.Log("[ElevenLabs] Connecting to " + url);
-        // DebugUI.Log("Opening WebSocket...");
-        // DebugUI.Instance.ConnectionState = "Connecting";
-
-
-        // _ws = new WebSocket(url);
 
         // When open, notify voiceInputManager and send conversationInitiation and start mic
         _ws.OnOpen += () =>
