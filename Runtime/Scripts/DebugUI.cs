@@ -121,7 +121,7 @@ public class DebugUI : MonoBehaviour
         toggleDebugAction.action.Disable();
     }
 
-    // Called when the ToggleDebug input action is performed (e.g. when pressing F3)
+    // Called when the ToggleDebug input action is performed (e.g. when pressing Tab)
     private void OnToggleDebugPerformed(InputAction.CallbackContext ctx)
     {
         TogglePanel();
