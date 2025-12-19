@@ -153,7 +153,7 @@ private bool _pttHeld = false;
         if (_ws != null) _ws.DispatchMessageQueue();
 #endif
 
-        // Push-to-talk function that uses voiceInputManager logic
+        
         // Push-to-talk function that uses voiceInputManager logic
         if (_connected && _readyForTalk && !_isProcessing)
         {
