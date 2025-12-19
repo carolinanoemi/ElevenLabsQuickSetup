@@ -1,0 +1,11 @@
+{
+  "name": "com.thepointlabs.elevenlabs-quick-setup",
+  "version": "0.1.0",
+  "displayName": "ElevenLabs Quick Setup",
+  "description": "Quick setup prefabs + scripts for an ElevenLabs realtime agent (Push-To-Talk + Debug UI + sample scene).",
+  "unity": "2022.3",
+  "author": {
+    "name": "The Point Labs",
+    "url": "https://github.com/carolinanoemi/ElevenLabsQuickSetup"
+  }
+}
