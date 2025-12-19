@@ -595,8 +595,7 @@ private void OnPttCanceled(InputAction.CallbackContext ctx)
         // Send silence chunk
         try
         {
-            // send longer silence to ensure server detects end of speech
-            // int silenceSamples = voiceInputManager.sampleRate / 2;
+           
 
             // send trailing silence to help the server detect end of speech
             int silenceSamples = Mathf.RoundToInt(
