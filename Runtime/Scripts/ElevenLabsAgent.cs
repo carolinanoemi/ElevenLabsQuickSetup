@@ -333,9 +333,7 @@ private void OnPttCanceled(InputAction.CallbackContext ctx)
             headers.Add("xi-api-key", apiKey);
         }
 
-        
         _ws = new WebSocket(url, headers);
-
 
         // When open, notify voiceInputManager and send conversationInitiation and start mic
         _ws.OnOpen += () =>
@@ -546,7 +544,7 @@ private void OnPttCanceled(InputAction.CallbackContext ctx)
 
     private void HandleMicChunkReady(string base64Audio)
     {
-        // EXACT same payload as before, just moved from VoiceInputManager
+        
         QueueSend("{\"user_audio_chunk\":\"" + base64Audio + "\"}");
     }
 
