@@ -47,7 +47,7 @@ public class VoiceInputManager : MonoBehaviour
 
     private void Awake()
     {
-        // Same safety mic cleanup you had before, just moved here
+       
         if (Microphone.IsRecording(microphoneDevice))
         {
             Debug.LogWarning("[ElevenLabs] Found lingering mic session from previous run. Forcing stop.");
