@@ -62,7 +62,6 @@ public class AudioOutputManager : MonoBehaviour
     // pcmBytes: raw audio bytes in PCM16 little-endian format
     // rate: sample rate (e.g. 16000 or 48000 depending on what the agent uses)
     //
-    // What we do:
     // 1) Convert bytes -> short samples (16-bit)
     // 2) Convert short -> float samples (-1..1), which Unity uses
     // 3) Create an AudioClip
@@ -89,7 +88,7 @@ public class AudioOutputManager : MonoBehaviour
         }
 
         // Create a Unity AudioClip from the samples.
-        // - "ElevenLabsChunk": name (doesn't matter, helps in debugging)
+        // - "ElevenLabsChunk": name 
         // - sampleCount: total samples
         // - 1 channel: mono (voice)
         // - rate: sample rate given by the stream
