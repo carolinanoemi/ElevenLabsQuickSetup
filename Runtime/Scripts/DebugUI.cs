@@ -101,7 +101,7 @@ public class DebugUI : MonoBehaviour
     {
         // New Input System:
         // We subscribe to an InputAction event (no Update() polling).
-        // This is best for packages because it's clear and avoids per-frame input checks.
+ 
         if (toggleDebugAction == null)
         {
             // Not an error — just means the user hasn't wired the action yet.
