@@ -251,7 +251,7 @@ private bool _pttHeld = false;
 #if ENABLE_INPUT_SYSTEM
 private void OnPttStarted(InputAction.CallbackContext ctx)
 {
-    // Match old GetKeyDown behavior
+    // Match old Input System GetKeyDown behavior
     if (!_connected || !_readyForTalk || _isProcessing) return;
 
     _currentPressDuration = 0f;
@@ -262,7 +262,7 @@ private void OnPttStarted(InputAction.CallbackContext ctx)
 #if ENABLE_INPUT_SYSTEM
 private void OnPttCanceled(InputAction.CallbackContext ctx)
 {
-    // Match old GetKeyUp behavior
+    // Match old Input System GetKeyUp behavior
     if (!_pttHeld) return;
 
     _pttHeld = false;
