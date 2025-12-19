@@ -68,25 +68,21 @@ Before importing this package, install:
 
 
 
-**1)** Configure ElevenLabs credentials
+**1)** Open the sample scene:
 
-   Move the file:
+&nbsp;  Open Package Manager -> select the package -> Samples -> Import “SampleScene”
 
-     ElevenLabsConfig.json
+   Then open:
 
-   to:
-
-     Assets/Resources/ElevenLabsConfig.json
+&nbsp;		Assets/Samples/ElevenLabsQuickSetup/<version>/SampleScene/Scenes/ElevenLabsStarterAssetSampleScene.unity
 
 
 
-   Update API key and Agent ID if needed.
+**2)** Select Agent/ElevenLabsAgent object i Hierachy
 
+ 	- In the Inspector (ElevenLabsAgent(Script) component), confirm API Key + AgentId 
 
-
-**2)** Open the sample scene
-
-   Assets/ElevenLabsSetup/Scenes/ElevenLabsStarterAssetSampleScene
+&nbsp;	- Update if needed
 
 
 
@@ -160,15 +156,7 @@ Before importing this package, install:
 
 
 
-**1)** Configure ElevenLabs credentials
-
-   Move ElevenLabsConfig.json to:
-
-     Assets/Resources
-
-
-
-**2)** Add the Agent prefab
+**1)** Add the Agent prefab
 
    - Drag ElevenLabsAgent into the scene
 
@@ -176,15 +164,21 @@ Before importing this package, install:
 
    - Adjust position/rotation if needed
 
+   - In the Inspector (ElevenLabsAgent(Script) component), confirm API Key + AgentId
+
+   - Update if needed
 
 
-**3)** Add the Debug UI
+
+
+
+**2)** Add the Debug UI
 
    - Drag DebugUI prefab into the scene
 
 
 
-**4)** Create Input Actions (New Input System only)
+**3)** Create Input Actions (New Input System only)
 
    - PushToTalk (Keyboard T)
 
@@ -192,7 +186,7 @@ Before importing this package, install:
 
 
 
-**5)** Assign Input Actions
+**4)** Assign Input Actions
 
    - ElevenLabsAgent -> PushToTalk
 
@@ -200,7 +194,7 @@ Before importing this package, install:
 
 
 
-**6)** Press Play
+**5)** Press Play
 
 
 
@@ -292,7 +286,7 @@ That value is used for:
 
 
 
-TIP: Console/Output Log is the source of truth for connection + audio format.
+**TIP:** Console/Output Log is the source of truth for connection + audio format.
 
 DebugUI is optional and can be disabled.
 
