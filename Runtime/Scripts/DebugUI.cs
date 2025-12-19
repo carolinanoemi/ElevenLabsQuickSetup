@@ -42,7 +42,7 @@ public class DebugUI : MonoBehaviour
 
     public static DebugUI Instance { get; private set; }
 
-    // Use Queues for FIFO (First In, First Out) logic. Much faster than splitting strings.
+    // Use Queues for FIFO (First In, First Out) logic
     private readonly Queue<string> _logQueue = new Queue<string>();
     private readonly Queue<string> _transcriptQueue = new Queue<string>();
 
